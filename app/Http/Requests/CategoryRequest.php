@@ -11,7 +11,7 @@ class CategoryRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,8 +22,8 @@ class CategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'=>'required|string|max:225',
-            'course_id'=>'required'
+            'name'=>'required|string|max:225'
+            
         ];
     }
 }

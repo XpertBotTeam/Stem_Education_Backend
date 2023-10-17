@@ -16,7 +16,7 @@ class CourseController extends Controller
     {
         $per_page = $request->get('per_page',25);
         $courses =  Course::paginate();
-        return response()->json($course);
+        return response()->json($courses);
     }
 
     /**

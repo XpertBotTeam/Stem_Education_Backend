@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('photo')->nullable();
             $table->text('biography');
-            $table->string('link');
+            $table->string('youtube_link');
             $table->date('release_date')->nullable();
             $table->timestamps();
         });

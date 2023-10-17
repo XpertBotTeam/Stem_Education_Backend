@@ -17,9 +17,9 @@ use App\Http\Controllers\API\CourseController;
 |
 */
 
-Route::resource('Categories',CategoryController::class);
+Route::resource('categories',CategoryController::class);
 
-Route::resource('courses',CourseController::Class);
+Route::resource('courses',CourseController::class);
 
 Route::post('register',[AuthController::class,'register']);
 
